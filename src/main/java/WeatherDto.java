@@ -1,4 +1,4 @@
-public class WeatherDTO {
+public class WeatherDto {
 
     private Integer id;
 
@@ -8,7 +8,7 @@ public class WeatherDTO {
 
     private String icon;
 
-    public WeatherDTO(Integer id, String main, String description, String icon) {
+    public WeatherDto(Integer id, String main, String description, String icon) {
         this.id = id;
         this.main = main;
         this.description = description;
