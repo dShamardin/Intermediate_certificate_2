@@ -31,24 +31,24 @@ public class WeatherDataDto {
     private Integer cod;
 
 
-    public WeatherDataDto(CoordDto coord, List<WeatherDto> weather, String base, MainDto main, Integer visibility,
-                          WindDto wind, Integer clouds, Integer rain, Short snow, Integer dt, SysDto sys, Integer id,
-                          String name, Integer cod) {
-        this.coord = coord;
-        this.weather = weather;
-        this.base = base;
-        this.main = main;
-        this.visibility = visibility;
-        this.wind = wind;
-        this.clouds = clouds;
-        this.rain = rain;
-        this.snow = snow;
-        this.dt = dt;
-        this.sys = sys;
-        this.id = id;
-        this.name = name;
-        this.cod = cod;
-    }
+  //  public WeatherDataDto(CoordDto coord, List<WeatherDto> weather, String base, MainDto main, Integer visibility,
+  //                        WindDto wind, Integer clouds, Integer rain, Short snow, Integer dt, SysDto sys, Integer id,
+  //                        String name, Integer cod) {
+  //      this.coord = coord;
+  //      this.weather = weather;
+  //      this.base = base;
+  //      this.main = main;
+  //      this.visibility = visibility;
+  //      this.wind = wind;
+  //      this.clouds = clouds;
+  //      this.rain = rain;
+  //      this.snow = snow;
+  //      this.dt = dt;
+  //      this.sys = sys;
+  //      this.id = id;
+  //      this.name = name;
+  //      this.cod = cod;
+  //  }
 
 
     public CoordDto getCoord() {
