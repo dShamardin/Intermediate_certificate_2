@@ -15,17 +15,17 @@ public class MainDto {
     private Short grnd_level;
 
 
-    public MainDto(Float temp, Integer pressure, Integer humidity, Float temp_min, Float temp_max, Short sea_level,
-                   Short grnd_level) {
-
-        this.temp = temp;
-        this.pressure = pressure;
-        this.humidity = humidity;
-        this.temp_min = temp_min;
-        this.temp_max = temp_max;
-        this.sea_level = sea_level;
-        this.grnd_level = grnd_level;
-    }
+//    public MainDto(Float temp, Integer pressure, Integer humidity, Float temp_min, Float temp_max, Short sea_level,
+//                   Short grnd_level) {
+//
+//        this.temp = temp;
+//        this.pressure = pressure;
+//        this.humidity = humidity;
+//        this.temp_min = temp_min;
+//        this.temp_max = temp_max;
+//        this.sea_level = sea_level;
+//        this.grnd_level = grnd_level;
+//    }
 
     public Float getTemp() {
         return temp;

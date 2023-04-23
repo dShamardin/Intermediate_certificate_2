@@ -5,11 +5,11 @@ public class CoordDto {
  private Float  lat;  // latitude
 
 
- public CoordDto(){
-    this.lon = lon;
-    this.lat = lat;
-
- }
+// public CoordDto(){
+//    this.lon = lon;
+//    this.lat = lat;
+//
+// }
 
     public Float getLon() {
         return lon;

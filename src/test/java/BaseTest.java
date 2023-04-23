@@ -16,12 +16,12 @@ public class BaseTest {
         faker = new Faker();
     }
 
-    @BeforeEach
-    public void setup() {
-        RequestSpecification requestSpec = RestAssured.given();
-        ResponseSpecBuilder specBuilder = new ResponseSpecBuilder()
-                .expectStatusCode(200);
-        ResponseSpecification responseWeatherDto =specBuilder.build();
-    }
+//    @BeforeEach
+//    public void setup() {
+//        RequestSpecification requestSpec = RestAssured.given();
+//        ResponseSpecBuilder specBuilder = new ResponseSpecBuilder()
+//                .expectStatusCode(200);
+//        ResponseSpecification responseWeatherDataDto = specBuilder.build();
+//    }
 
 }

@@ -13,14 +13,14 @@ public class SysDto {
     private Integer sunset;
 
 
-    public SysDto(Integer type, Integer id, Float message, String country, Integer sunrise, Integer sunset) {
-        this.type = type;
-        this.id = id;
-        this.message = message;
-        this.country = country;
-        this.sunrise = sunrise;
-        this.sunset = sunset;
-    }
+//    public SysDto(Integer type, Integer id, Float message, String country, Integer sunrise, Integer sunset) {
+//        this.type = type;
+//        this.id = id;
+//        this.message = message;
+//        this.country = country;
+//        this.sunrise = sunrise;
+//        this.sunset = sunset;
+//    }
 
     public Integer getType() {
         return type;

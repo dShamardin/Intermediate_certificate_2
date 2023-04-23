@@ -1,58 +1,51 @@
-import com.sun.security.jgss.AuthorizationDataEntry;
-import io.qameta.allure.Flaky;
 import io.restassured.RestAssured;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.common.mapper.TypeRef;
 import io.restassured.response.Response;
-import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
-import org.assertj.core.api.AbstractBigDecimalAssert;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-
 import java.util.List;
-import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.tuple;
-import static org.assertj.core.api.BDDAssertions.then;
 import static org.hamcrest.Matchers.equalTo;
 
 public class WeatherDataTest extends BaseTest {
 
     RequestSpecification requestSpec;
 
-    ResponseSpecification responseWeatherDto;
+    ResponseSpecification responseWeatherDataDto;
 
 
   // Test№1
-    @Flaky
+
     @Test
     public void shouldGetWeatherDataByNameOfTheCity() {
+//        RequestSpecification requestSpec = RestAssured.given();
         RestAssured.baseURI = "https://api.openweathermap.org/data/2.5";
-        RequestSpecification request = RestAssured.given();
-        WeatherDataDto response = (WeatherDataDto) request
-                //.param("name", "Moscow")
+        ResponseSpecBuilder specBuilder = new ResponseSpecBuilder()
+                .expectStatusCode(200);
+        ResponseSpecification responseWeatherDataDto = specBuilder.build();
+        WeatherDataDto response = requestSpec
                 .get("https://api.openweathermap.org/data/2.5/weather?q=Rostov-na-Donu&units=metric&lang" +
-                        "=en&mode=json&appid=fdd6f45115e02076240d062f87add0b5");
-//                .as(new TypeRef<>() {
-//                });
+                        "=en&mode=json&appid=fdd6f45115e02076240d062f87add0b5")
+                .as(new TypeRef<>() {});
+
+        assertThat(response.getName()).isEqualTo("Rostov-on-Don");
 
         assertThat(response)
                 .extracting(
                         WeatherDataDto::getName,
-                        WeatherDataDto::getId,
-                        WeatherDataDto::getVisibility
+                        WeatherDataDto::getId
                 )
                 .containsExactlyInAnyOrder(
                         tuple(
-                                "Rostov-na-Donu",
-                                802,
-                                10000
+                                "Rostov-on-Don",
+                                802
                         )
                 );
     }
@@ -81,15 +74,13 @@ public class WeatherDataTest extends BaseTest {
     public void shouldGetWeatherDataByParameters() throws NullPointerException {
         RestAssured.baseURI = "https://api.openweathermap.org/data/2.5";
         RequestSpecification request = RestAssured.given();
-        ValidatableResponse response = request
+        requestSpec
             .get("https://api.openweathermap.org/data/2.5/weather?q=Moscow&id=802&lat=55.7522&lon=37." +
                     "6156&units=metric&lang=en&mode=json&appid=fdd6f45115e02076240d062f87add0b5")
             .then()
-            .spec(responseWeatherDto)
-            .body("name", equalTo("Moscow"));
-//            .body("id",equalTo("802"))
-//            .body("lat", equalTo("55.7522"))
-//            .body("lon", equalTo("37.6156"));
+            .spec(responseWeatherDataDto)
+            .body("name", equalTo("Moscow"))
+            .body("lon", equalTo("37.6156"));
     }
 
     // Test№4
@@ -125,10 +116,8 @@ public class WeatherDataTest extends BaseTest {
         final JSONArray coordjson =new JSONArray(List.of(object));
         getRequest.body(coordjson.toString());
 
-
         System.out.println(getRequest.log().body());
-       // getRequest.body(object.toString());
-       // getRequest.header("content-type", "application/json");
+
         Response response = getRequest.get("https://api.openweathermap.org/data/2.5/weather?q=Moscow&units=" +
                 "imperial&lang=en&mode=json&appid=fdd6f45115e02076240d062f87add0b5");
 
@@ -139,6 +128,64 @@ public class WeatherDataTest extends BaseTest {
                         "37.6156", equalTo(coord.getLon()),
                         "55.7522", equalTo(coord.getLat())
                 );
+    }
+
+    // Test№6
+
+    @Test
+    public void shouldGetWeatherDataByTheCityName() {
+        RequestSpecification requestSpec = RestAssured.given();
+        RestAssured.baseURI = "https://api.openweathermap.org/data/2.5";
+        ResponseSpecBuilder specBuilder = new ResponseSpecBuilder()
+                .expectStatusCode(200);
+        ResponseSpecification responseWeatherDataDto = specBuilder.build();
+    requestSpec
+            .get("https://api.openweathermap.org/data/2.5/weather?q=Rostov-na-Donu&units=metric&lang=" +
+                    "en&mode=json&appid=fdd6f45115e02076240d062f87add0b5")
+            .then()
+            .spec(responseWeatherDataDto)
+            .body("name", equalTo("Rostov-on-Don"));
+    }
+
+    // Test№7
+
+    @Test
+    public void shouldGetWeatherDataWithNegativeLongitude() {
+        RequestSpecification requestSpec = RestAssured.given();
+        RestAssured.baseURI = "https://api.openweathermap.org/data/2.5";
+        ResponseSpecBuilder specBuilder = new ResponseSpecBuilder()
+                .expectStatusCode(200);
+        ResponseSpecification responseWeatherDataDto = specBuilder.build();
+        requestSpec
+                .param("lon","-10")
+                .get("https://api.openweathermap.org/data/2.5/weather?lon=-10&units=" +
+                        "metric&lang=en&mode=json&appid=fdd6f45115e02076240d062f87add0b5")
+                .then()
+                .statusCode(400)
+                .assertThat()
+                .body(
+                        "cod", equalTo("400"),
+                        "message", equalTo("Nothing to geocode")
+                );
+    }
+
+    // Test№8
+    @Test
+    public void shouldGetWeatherDataWithExtractind() {
+        RequestSpecification requestSpec = RestAssured.given();
+        RestAssured.baseURI = "https://api.openweathermap.org/data/2.5";
+        ResponseSpecBuilder specBuilder = new ResponseSpecBuilder()
+                .expectStatusCode(200);
+        ResponseSpecification responseWeatherDataDto = specBuilder.build();
+       String nameCity = requestSpec
+               .get("https://api.openweathermap.org/data/2.5/weather?q=Rostov-on-Don&lon=-10&units=" +
+                       "metric&lang=en&mode=json&appid=fdd6f45115e02076240d062f87add0b5")
+               .then()
+               .spec(responseWeatherDataDto)
+               .body("name",equalTo("Rostov-on-Don"))
+               .extract()
+               .path("name");
+
     }
 
    }

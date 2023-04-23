@@ -5,10 +5,10 @@ public class WindDto {
     private Integer deg;
 
 
-    public WindDto(Float speed, Integer deg){
-        this.speed = speed;
-        this.deg = deg;
-    }
+//    public WindDto(Float speed, Integer deg){
+//        this.speed = speed;
+//        this.deg = deg;
+//    }
 
 
     public Float getSpeed() {
