@@ -1,5 +1,3 @@
-import com.github.javafaker.Faker;
-
 public class CoordDto {
 
  private Float  lon;  // longitude
@@ -7,20 +5,11 @@ public class CoordDto {
  private Float  lat;  // latitude
 
 
- public CoordDto(Float lon, Float lat){
+ public CoordDto(){
     this.lon = lon;
     this.lat = lat;
 
  }
-
- public CoordDto() {
-    final Faker faker = new Faker();
-
-    this.lon = Float.valueOf(faker.address().longitude());
-    this.lat = Float.valueOf(faker.address().latitude());
-
- }
-
 
     public Float getLon() {
         return lon;
