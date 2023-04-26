@@ -8,13 +8,6 @@ public class WeatherDto {
 
     private String icon;
 
-//    public WeatherDto(Integer id, String main, String description, String icon) {
-//        this.id = id;
-//        this.main = main;
-//        this.description = description;
-//        this.icon = icon;
-//    }
-
     public Integer getId() {
         return id;
     }

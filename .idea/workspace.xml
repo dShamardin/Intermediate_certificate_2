@@ -6,9 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="c3e67a42-8b4a-4d5b-a72f-9b040e054a9c" name="Changes" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CoordDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CoordDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SysDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SysDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WeatherDataDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherDataDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WeatherDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WindDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WindDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swagger/parser/ru/SwaggerUtil.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/WeatherDataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WeatherDataTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/swagger/parser/ru/WeatherDataDtoSwagger.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +27,77 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Intermediate_certificate_2" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Intermediate_certificate_2" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Intermediate_certificate_2" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Intermediate_certificate_2" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Intermediate_certificate_2" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="documentation" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Intermediate_certificate_2" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="help" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Intermediate_certificate_2" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Intermediate_certificate_2" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Intermediate_certificate_2" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Intermediate_certificate_2" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -45,11 +124,14 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Automation Qualiity Assuruance/Intermediate_certificate_2&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/AQA/aqa-14&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.WeatherDataTest.shouldGetWeatherDataByJson">
-    <configuration name="WeatherDataTest.shouldGetWeatherData" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.WeatherDataTest">
+    <configuration name="WeatherDataTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -62,7 +144,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;WeatherDataTest.shouldGetWeatherData&quot;" />
+            <option value="&quot;WeatherDataTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -72,7 +154,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="WeatherDataTest.shouldGetWeatherDataByCityName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="WeatherDataTest.shouldGetWeatherData1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -85,7 +167,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;WeatherDataTest.shouldGetWeatherDataByCityName&quot;" />
+            <option value="&quot;WeatherDataTest.shouldGetWeatherData1&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -95,7 +177,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="WeatherDataTest.shouldGetWeatherDataByJson" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="WeatherDataTest.shouldGetWeatherDataByOkHttp" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -108,7 +190,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;WeatherDataTest.shouldGetWeatherDataByJson&quot;" />
+            <option value="&quot;WeatherDataTest.shouldGetWeatherDataByOkHttp&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -118,7 +200,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="WeatherDataTest.shouldGetWeatherDataDefault" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="WeatherDataTest.shouldGetWeatherDataByTheCityName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -131,7 +213,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;WeatherDataTest.shouldGetWeatherDataDefault&quot;" />
+            <option value="&quot;WeatherDataTest.shouldGetWeatherDataByTheCityName&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -141,7 +223,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="WeatherDataTest.shouldNotGetWeatherData" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="WeatherDataTest.shouldGetWeatherDataWithTypeRef" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -154,7 +236,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;WeatherDataTest.shouldNotGetWeatherData&quot;" />
+            <option value="&quot;WeatherDataTest.shouldGetWeatherDataWithTypeRef&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -166,11 +248,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.WeatherDataTest.shouldGetWeatherDataByJson" />
-        <item itemvalue="Gradle.WeatherDataTest.shouldGetWeatherData" />
-        <item itemvalue="Gradle.WeatherDataTest.shouldNotGetWeatherData" />
-        <item itemvalue="Gradle.WeatherDataTest.shouldGetWeatherDataByCityName" />
-        <item itemvalue="Gradle.WeatherDataTest.shouldGetWeatherDataDefault" />
+        <item itemvalue="Gradle.WeatherDataTest" />
+        <item itemvalue="Gradle.WeatherDataTest.shouldGetWeatherData1" />
+        <item itemvalue="Gradle.WeatherDataTest.shouldGetWeatherDataByTheCityName" />
+        <item itemvalue="Gradle.WeatherDataTest.shouldGetWeatherDataWithTypeRef" />
+        <item itemvalue="Gradle.WeatherDataTest.shouldGetWeatherDataByOkHttp" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681908325537</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="commit">
+      <created>1682268694571</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682268694571</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

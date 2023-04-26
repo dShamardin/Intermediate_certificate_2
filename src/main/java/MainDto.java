@@ -2,6 +2,8 @@ public class MainDto {
 
     private Float temp;
 
+    private Float feels_like;
+
     private Integer pressure;
 
     private Integer humidity;
@@ -15,24 +17,20 @@ public class MainDto {
     private Short grnd_level;
 
 
-//    public MainDto(Float temp, Integer pressure, Integer humidity, Float temp_min, Float temp_max, Short sea_level,
-//                   Short grnd_level) {
-//
-//        this.temp = temp;
-//        this.pressure = pressure;
-//        this.humidity = humidity;
-//        this.temp_min = temp_min;
-//        this.temp_max = temp_max;
-//        this.sea_level = sea_level;
-//        this.grnd_level = grnd_level;
-//    }
-
     public Float getTemp() {
         return temp;
     }
 
     public void setTemp(Float temp) {
         this.temp = temp;
+    }
+
+    public Float getFeels_like() {
+        return feels_like;
+    }
+
+    public void setFeels_like(Float feels_like) {
+        this.feels_like = feels_like;
     }
 
     public Integer getPressure() {

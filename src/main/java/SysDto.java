@@ -4,7 +4,6 @@ public class SysDto {
 
     private Integer id;
 
-    private Float message;
 
     private String country;
 
@@ -12,15 +11,6 @@ public class SysDto {
 
     private Integer sunset;
 
-
-//    public SysDto(Integer type, Integer id, Float message, String country, Integer sunrise, Integer sunset) {
-//        this.type = type;
-//        this.id = id;
-//        this.message = message;
-//        this.country = country;
-//        this.sunrise = sunrise;
-//        this.sunset = sunset;
-//    }
 
     public Integer getType() {
         return type;
@@ -38,13 +28,6 @@ public class SysDto {
         this.id = id;
     }
 
-    public Float getMessage() {
-        return message;
-    }
-
-    public void setMessage(Float message) {
-        this.message = message;
-    }
 
     public String getCountry() {
         return country;
