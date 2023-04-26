@@ -4,7 +4,6 @@ public class SysDto {
 
     private Integer id;
 
-
     private String country;
 
     private Integer sunrise;

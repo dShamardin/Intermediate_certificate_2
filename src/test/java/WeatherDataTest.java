@@ -39,7 +39,8 @@ public class WeatherDataTest extends BaseTest {
     @Test
     public void shouldGetWeatherData1() {
         ResponseSpecification responseSpec = new ResponseSpecBuilder().expectStatusCode(200).build();
-        Response response1 = given().get("https://api.openweathermap.org/data/2.5/weather?q=Rostov-na-Donu&units=metric&lang" +
+        Response response1 = given().get("https://api.openweathermap.org/data/2.5/weather?q=" +
+                "Rostov-na-Donu&units=metric&lang" +
                 "=en&mode=json&appid=fdd6f45115e02076240d062f87add0b5");
 
         assertThat(response1)
@@ -55,20 +56,32 @@ public class WeatherDataTest extends BaseTest {
 
     // Test№2
     @Test
-    public void shouldGetWeatherData2() {
-        RequestSpecification request = given();
-        Response response = request
-                .get("https://api.openweathermap.org/data/2.5/weather?q=Rostov-na-Donu&units=metric&lang" +
-                        "=en&mode=json&appid=fdd6f45115e02076240d062f87add0b5");
+    public void shouldCheckGetWeatherDataByCountry() {
+        RequestSpecification getRequest = given();
 
+        final SysDto sys = new SysDto();
 
-        assertThat(response).extracting(
-                Response::getContentType,
-                Response::getStatusCode
-        ).contains(
-                "application/json; charset=utf-8",
-                200
-        );
+        JSONObject object = new JSONObject();
+        object.put("type", sys.getType());
+        object.put("id", sys.getId());
+        object.put("country", sys.getCountry());
+        object.put("sunrize", sys.getSunrise());
+        object.put("sunset", sys.getSunset());
+
+        final JSONArray sysjson =new JSONArray(List.of(object));
+        getRequest.body(sysjson.toString());
+
+        System.out.println(getRequest.log().body());
+
+        Response response = getRequest.get("https://api.openweathermap.org/data/2.5/weather?q=Moscow&units" +
+                "=metric&lang=en&mode=json&appid=fdd6f45115e02076240d062f87add0b5");
+
+        response
+                .then()
+                .statusCode(200)
+                .body(
+                        "RU", equalTo(sys.getCountry())
+                );
     }
 
     // Test№3
@@ -201,15 +214,13 @@ public class WeatherDataTest extends BaseTest {
     @Test
     public void shouldGetWeatherDataWithTypeRef() {
         RequestSpecification requestSpec = given();
-        WeatherDataDto response =requestSpec
+        WeatherDto response = requestSpec
                 .get("https://api.openweathermap.org/data/2.5/weather?q=Moscow&id=802&lat=55.7522&lon=37." +
                         "6156&units=metric&lang=en&mode=json&appid=fdd6f45115e02076240d062f87add0b5")
                 .as(new TypeRef<>() {});
 
-        assertThat(response.getName()).isEqualTo("Moscow");
+        assertThat(response.getId()).isEqualTo("804");
     }
-
-
    }
 
 

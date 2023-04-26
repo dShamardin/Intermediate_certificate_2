@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3e67a42-8b4a-4d5b-a72f-9b040e054a9c" name="Changes" comment="commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CoordDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CoordDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SysDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SysDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WeatherDataDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherDataDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WeatherDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WindDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WindDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/swagger/parser/ru/SwaggerUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/WeatherDataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WeatherDataTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/swagger/parser/ru/WeatherDataDtoSwagger.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,11 +76,6 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Intermediate_certificate_2" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Intermediate_certificate_2" type="f1a62948:ProjectNode" />
                 <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
@@ -120,17 +106,60 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/AQA/aqa-14&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/AQA/aqa-14",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "io.qameta.allure.idea.settings.ProjectSettingsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Gradle.WeatherDataTest">
+    <configuration name="Intermediate_certificate_2 [allureReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="allureReport" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Intermediate_certificate_2 [allureServe]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="allureServe" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="WeatherDataTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -154,7 +183,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="WeatherDataTest.shouldGetWeatherData1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="WeatherDataTest.shouldCheckGetWeatherDataByCountry" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -167,53 +196,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;WeatherDataTest.shouldGetWeatherData1&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="WeatherDataTest.shouldGetWeatherDataByOkHttp" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;WeatherDataTest.shouldGetWeatherDataByOkHttp&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="WeatherDataTest.shouldGetWeatherDataByTheCityName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;WeatherDataTest.shouldGetWeatherDataByTheCityName&quot;" />
+            <option value="&quot;WeatherDataTest.shouldCheckGetWeatherDataByCountry&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -249,10 +232,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.WeatherDataTest" />
-        <item itemvalue="Gradle.WeatherDataTest.shouldGetWeatherData1" />
-        <item itemvalue="Gradle.WeatherDataTest.shouldGetWeatherDataByTheCityName" />
+        <item itemvalue="Gradle.WeatherDataTest.shouldCheckGetWeatherDataByCountry" />
         <item itemvalue="Gradle.WeatherDataTest.shouldGetWeatherDataWithTypeRef" />
-        <item itemvalue="Gradle.WeatherDataTest.shouldGetWeatherDataByOkHttp" />
+        <item itemvalue="Gradle.Intermediate_certificate_2 [allureServe]" />
+        <item itemvalue="Gradle.Intermediate_certificate_2 [allureReport]" />
       </list>
     </recent_temporary>
   </component>
@@ -279,11 +262,22 @@
       <option name="project" value="LOCAL" />
       <updated>1682268694571</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit">
+      <created>1682512939171</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682512939171</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
